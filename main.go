@@ -28,7 +28,7 @@ func main() {
 
 	app.Post("/refresh", RefreshTokens)
 	app.Get("/auth", CreateSession)
-	//app.Post("/new", CreateUser)
+	app.Get("/secret", GetSecretData)
 
 	app.Listen(":3000")
 }
