@@ -9,6 +9,9 @@ import (
 	"github.com/golang-jwt/jwt/v5"
 )
 
+var global_access_token string //переменная имитирующая переменную во фронтенде, в которую сохраняется access токен при авторизации,
+//она нужна исключительно для проверки работоспособности функции GetSecretData
+
 func GetSecretData(c *fiber.Ctx) error {
 	access_token := c.Get("Authorization")
 	access_token = strings.TrimPrefix(access_token, "Bearer ")

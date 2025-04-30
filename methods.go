@@ -9,7 +9,6 @@ import (
 	"golang.org/x/crypto/bcrypt"
 )
 
-var global_access_token string //переменная имитирующая переменную во фронтенде, в которую сохраняется access токен при авторизации
 var accessKey []byte
 
 func GenerateAccessToken(userIP string) (string, error) {
