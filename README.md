@@ -14,7 +14,7 @@
 <!--Установка-->
 ## Клонирование репозитория
 
-```git clone https://github.com/RomanB51/SkillsRock.git```
+```https://github.com/RomanB51/MEDODS.git```
 
 <!--Пользовательская документация-->
 ## Документация
