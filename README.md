@@ -9,7 +9,7 @@
  Данное API представляет собой часть сервиса аутентификации с помощью JWT токенов. Список открытых сессий хранится в БД PostgreSQL. <!-- описание репозитория -->
 <!--Блок информации о репозитории в бейджах-->
 
-<img src="https://github.com/RomanB51/Image_for_readme/blob/main/Image_for_SkillsRock/SkillsRock.jpg" alt="logo" width="200"/>
+<img src="https://github.com/RomanB51/Image_for_readme/blob/main/Image_for_MEDODS/74aa73433fa4ff3cb89cab06b90fee29.jpg" alt="logo" width="200"/>
 
 <!--Установка-->
 ## Клонирование репозитория
