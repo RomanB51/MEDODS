@@ -1,13 +1,12 @@
 # MEDODS
 Часть сервиса аутентификации с использованием JWT.
-
+<!--Блок информации о репозитории в бейджах-->
 ![Static Badge](https://img.shields.io/badge/RomanB51-REST_API-7CFC00)
 ![Static Badge](https://img.shields.io/badge/Go-1.22.2-blue)
 ![Static Badge](https://img.shields.io/badge/Fiber-V2-red)
 ![Static Badge](https://img.shields.io/badge/PostgreSQL-16.6-CD853F)
-
- Данное API представляет собой часть сервиса аутентификации с помощью JWT токенов. Список открытых сессий хранится в БД PostgreSQL. <!-- описание репозитория -->
-<!--Блок информации о репозитории в бейджах-->
+<!-- описание репозитория -->
+ Данное API представляет собой часть сервиса аутентификации с помощью JWT токенов. Список открытых сессий хранится в БД PostgreSQL. 
 
 <img src="https://github.com/RomanB51/Image_for_readme/blob/main/Image_for_MEDODS/74aa73433fa4ff3cb89cab06b90fee29.jpg" alt="logo" width="200"/>
 
@@ -49,6 +48,8 @@
 *Открытие сессии в БД:*
 ![image](https://github.com/RomanB51/Image_for_readme/blob/main/Image_for_MEDODS/Постгрес%20авторизация.png)
 
+Что происходит?
+Клиент отправляет на сервер Get запрос, в заголовке указан GUID пользователя. После этого происходит генерация двух токенов. Refresh токен шифруется и помещается в БД вместе с GUID пользователя. Access и Refresh токен помещаются в cookies.
 Refresh операция:
 
 *Refresh операция:*
@@ -56,3 +57,5 @@ Refresh операция:
 *БД после Refresh операции:*
 ![image](https://github.com/RomanB51/Image_for_readme/blob/main/Image_for_MEDODS/Постгрес%20рефреш%20операция.png)
 
+Что происходит?
+Клиент отправляет на сервер Post запрос, в заголовке указаны GUID пользователя и refresh токен. После этого происходит проверка refresh токена на правильность и время жизни, если все ок, то происходит генерация двух токенов. После этого в БД обновляются refresh токен и время его создания для данного пользователя. После этого Access и Refresh токены помещаются в cookies.
