@@ -39,12 +39,14 @@
 <!--Результат работы-->
 ## Результат работы
 Открытие сессии:
+
 *Открытие сессии и получение токенов в cookies:*
 ![image](https://github.com/RomanB51/Image_for_readme/blob/main/Image_for_MEDODS/Постман%20авторизация.png)
 *Открытие сессии в БД:*
 ![image](https://github.com/RomanB51/Image_for_readme/blob/main/Image_for_MEDODS/Постгрес%20авторизация.png)
 
 Refresh операция:
+
 *Refresh операция:*
 ![image](https://github.com/RomanB51/Image_for_readme/blob/main/Image_for_MEDODS/Постман%20рефреш%20операция.png)
 *БД после Refresh операции:*
